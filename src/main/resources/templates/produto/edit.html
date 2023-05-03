@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Editar produto</title>
+
+
+<head th:replace="~{headfragment :: head('Editar Produto')}">
+
 </head>
 <body>
-	
+	<nav th:replace="~{menufragment :: menu}"></nav>
 	Tela de produtos(view)
 	<!--Comentários html -->
-	<p>Identificador para edição: <span th:text="${idProduto}"></span>.</p>
+	<p>
+		Identificador para edição: <span th:text="${idProduto}"></span>.
+	</p>
 
 </body>
 </html>
